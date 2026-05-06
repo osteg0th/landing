@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  color: #5A8099;
+  background: var(--surface);
+  text-align: center;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.chip::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--cyan);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.chip:hover {
+  border-color: rgba(0, 245, 255, 0.3);
+  color: var(--cyan);
+  background: rgba(0, 245, 255, 0.05);
+}
+
+.chip:hover::after {
+  transform: scaleX(1);
+}

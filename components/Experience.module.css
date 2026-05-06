@@ -1,0 +1,151 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.item {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1.4rem;
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--cyan);
+  opacity: 0.5;
+}
+
+.item:hover { border-color: var(--border-hover); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.role {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 2px 7px;
+  border: 1px solid rgba(255, 62, 62, 0.3);
+  color: #FF8080;
+  text-transform: uppercase;
+}
+
+.period {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--cyan);
+  letter-spacing: 2px;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.companyLink {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--cyan);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.companyLink:hover { opacity: 1; }
+
+.company {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--cyan);
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+.metaSep {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: rgba(0, 245, 255, 0.2);
+}
+
+.industry,
+.location {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.about {
+  font-size: 14px;
+  color: #2A5A6E;
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+  border-left: 1px solid rgba(0, 245, 255, 0.1);
+  padding-left: 0.75rem;
+  font-style: italic;
+}
+
+.bullets {
+  list-style: none;
+  margin-bottom: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.bullet {
+  font-size: 15px;
+  color: #7A9BB5;
+  line-height: 1.7;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.bullet::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+  opacity: 0.5;
+  font-size: 11px;
+  top: 4px;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+

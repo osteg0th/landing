@@ -1,0 +1,36 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.copy {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #1A3A4A;
+  letter-spacing: 2px;
+}
+
+.status {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #1A6A4A;
+  letter-spacing: 2px;
+}
+
+.status::before {
+  content: '● ';
+  color: #00CC88;
+}
