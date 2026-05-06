@@ -25,7 +25,7 @@ export default function Hero() {
 
       <div className={styles.actions}>
         <a href="#projects" className="btn-primary">View Projects</a>
-        <a href="/cv.pdf" download className="btn-ghost">Download CV</a>
+        <a href="https://storage.googleapis.com/cyber-romulus-assets/CV_Vladyslav_Shevchenko.pdf" download className="btn-ghost">Download CV</a>
       </div>
 
       <div className={styles.stats}>
