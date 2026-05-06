@@ -20,6 +20,11 @@ const ubuntuMono = Ubuntu_Mono({
 export const metadata: Metadata = {
   title: "cyber-romulus.com | Vladyslav Shevchenko",
   description: "Senior Fullstack Engineer — .NET, React, Next.js. 7+ years across ERP, E-commerce, Military tech, and Private Equity.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "cyber-romulus.com | Vladyslav Shevchenko",
     description: "Senior Fullstack Engineer specializing in .NET and React.",
