@@ -12,7 +12,7 @@ export const profile = {
 export const keywords = [
   { label: ".NET / C#",     highlight: true  },
   { label: "React",         highlight: true  },
-  { label: "Azure OpenAI",  highlight: false },
+  { label: "Azure",         highlight: false },
   { label: "Microservices", highlight: false },
   { label: "Docker / K8s",  highlight: false },
   { label: "TypeScript",    highlight: false },
