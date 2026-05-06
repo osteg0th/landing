@@ -3,7 +3,7 @@ export const profile = {
   surname: "Shevchenko",
   title: "Senior Software Engineer",
   tagline: "Fullstack Engineer // .NET + React // 7+ Years",
-  bio: "I build and ship full-stack systems — clean .NET backends, React frontends, and everything in between. Over 7 years I've delivered production software for PE firms, military tech, UK retail, and enterprise ERP. I own things end to end, mentor teams, and move fast without cutting corners.",
+  bio: "I build and ship full-stack systems across the entire product — .NET backends, React frontends, AI integrations, and DevOps pipelines. Over 7 years I've delivered in private equity analytics, military tech, UK e-commerce, and enterprise ERP. I own things end to end, rewrite legacy systems that matter, mentor teams toward fullstack, and move fast without cutting corners.",
   email: "v.v.shevchenko1997@gmail.com",
   location: "Ukraine, Kyiv",
   availableForHire: true,
@@ -18,19 +18,12 @@ export const keywords = [
   { label: "TypeScript",    highlight: false },
 ];
 
-export const stats = [
-  { index: "_01", value: "7+",  label: "Yrs Exp"      },
-  { index: "_02", value: "4",   label: "Industries"   },
-  { index: "_03", value: "4",   label: "Companies"    },
-  { index: "_04", value: "30+", label: "Technologies" },
-];
-
 export const skills = [
   "C# / .NET", "ASP.NET Core", "EF Core", "Blazor",
   "React", "TypeScript", "Redux / MobX", "Node.js", "Next.js", "SignalR",
-  "MassTransit", "Kafka", "RabbitMQ",
+  "MassTransit", "RabbitMQ",
+  "Azure AI Foundry", "Azure OpenAI", "Azure Search", "Azure DevOps", "Azure Functions",
   "Docker", "Kubernetes", "Rancher", "Octopus",
-  "Azure OpenAI", "Azure AI Foundry", "Azure Search", "Azure DevOps", "Azure Functions",
   "MSSQL", "PostgreSQL", "MongoDB", "Oracle", "Redis", "Elasticsearch",
   "Auth0 / OAuth2", "xUnit / Moq", "Storybook",
 ];
@@ -46,14 +39,12 @@ export const experience = [
     period: "08/2024 — Present",
     current: true,
     bullets: [
-      "Implementing AI-powered market forecasting features on a platform used by global PE investment teams.",
-      "Built multi-entity semantic search using Azure OpenAI and Azure AI Search, cutting analyst lookup time significantly.",
-      "Leading migration of legacy C++ and Python services to .NET — improving maintainability and performance.",
-      "Developing internal agentic tools including an AI-assisted code review system, reducing review cycle time.",
-      "Mentoring frontend and backend engineers toward fullstack proficiency.",
-      "Set up CI/CD pipelines improving deployment reliability and release cadence.",
+      "DealEdge — delivered across the full product: AI semantic search (Azure OpenAI + Azure AI Search) over industries, geographies, charts and reports; interactive data visualisations; import/export pipelines; and various analytical modules for global PE teams.",
+      "Predictive Intelligence — led rewrite of the portfolio analysis module (PE metrics calculation) from C++ and Python to .NET; implemented Secondaries as a new asset type; improved performance, testability, and maintainability throughout.",
+      "Built and maintained CI/CD pipelines across projects, improving deployment reliability and release cadence.",
+      "Mentored frontend and backend engineers toward fullstack proficiency; owned regular knowledge-sharing sessions across the team.",
     ],
-    stack: [".NET", "Azure OpenAI", "Azure AI Search", "Azure AI Foundry", "Azure DevOps", "C++", "Python", "CI/CD"],
+    stack: [".NET", "Azure OpenAI", "Azure AI Search", "Azure AI Foundry", "Azure DevOps", "C++", "Python", "Monte Carlo", "CI/CD"],
   },
   {
     role: "Software Engineer",
@@ -113,12 +104,21 @@ export const experience = [
 export const projects = [
   {
     tag: "Private Equity",
-    name: "AI Market Forecaster",
+    name: "DealEdge",
     description:
-      "Market prediction platform with AI-driven pipelines and Azure OpenAI-powered semantic search for private equity analysts at Cepres.",
-    stack: [".NET", "Azure OpenAI", "Azure AI Foundry", "Azure Search"],
+      "Private equity analytics platform at Cepres. Delivered AI semantic search across industries, geographies, charts, and reports; built interactive data visualisations; implemented import/export pipelines; and contributed across the full product stack.",
+    stack: [".NET", "React", "Azure OpenAI", "Azure AI Search", "Azure AI Foundry"],
     github: "",
-    demo: "",
+    demo: "https://dealedge.cepres.com",
+  },
+  {
+    tag: "Private Equity",
+    name: "Predictive Intelligence",
+    description:
+      "Rewrote the portfolio analysis module — responsible for calculating core Private Equity metrics — from C++ and Python to .NET. Implemented Secondaries as a new asset type, extending the platform's analytical coverage.",
+    stack: [".NET", "React","C++", "Python", "Docker", "CI/CD", "Azure DevOps Pipelines"],
+    github: "",
+    demo: "https://cepres.com/solutions/predictive-intelligence",
   },
   {
     tag: "Military Tech",
@@ -143,15 +143,15 @@ export const projects = [
     name: "ERP Web Migration",
     description:
       "Migrated a C++ desktop ERP to a modern web stack, adding multi-database support (MSSQL, PostgreSQL, Oracle) and web-based HR/finance modules.",
-    stack: ["C#", "C++", "PostgreSQL", "OracleDB", "ASP.NET Core"],
+    stack: ["C#", "C++", "MSSQL", "PostgreSQL", "OracleDB", "ASP.NET Core"],
     github: "",
     demo: "",
   },
 ];
 
 export const socials = [
-  { label: "LinkedIn", href: "https://linkedin.com/in/YOUR_HANDLE", icon: "li" },
-  { label: "GitHub",   href: "https://github.com/YOUR_HANDLE",   icon: "gh" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/vladyslav-shevchenko-47984595", icon: "li" },
+  { label: "GitHub",   href: "https://github.com/osteg0th",   icon: "gh" },
   { label: "Email",    href: "mailto:v.v.shevchenko1997@gmail.com", icon: "em" },
-  { label: "Telegram", href: "https://t.me/YOUR_HANDLE",          icon: "tg" },
+  { label: "Telegram", href: "https://t.me/VladislavShevchenko", icon: "tg" },
 ];
